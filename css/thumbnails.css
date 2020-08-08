@@ -1,0 +1,79 @@
+.thumbnails-nest{
+    width: 90vw;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.thumbnail{
+    min-height: 30vh;
+    width: 15vw;
+    border: rgba(238, 232, 225, 0.5) 2px solid;
+    border-radius: 5px;
+    margin-top: 5vh;
+    margin-right: 15px;
+    margin-left: 15px;
+    opacity: 0;
+}
+
+.thumbnail:nth-child(1){
+    -webkit-animation: thumbnail-pop 0.5s ease forwards 1.6s;
+    animation: thumbnail-pop 0.5s ease forwards 1.6s;
+}
+.thumbnail:nth-child(2){
+    -webkit-animation: thumbnail-pop 0.5s ease forwards 1.6s;
+    animation: thumbnail-pop 0.5s ease forwards 1.8s;
+}
+.thumbnail:nth-child(3){
+    -webkit-animation: thumbnail-pop 0.5s ease forwards 1.6s;
+    animation: thumbnail-pop 0.5s ease forwards 2s;
+}
+.thumbnail:nth-child(4){
+    -webkit-animation: thumbnail-pop 0.5s ease forwards 1.6s;
+    animation: thumbnail-pop 0.5s ease forwards 2.2s;
+}
+.thumbnail:nth-child(5){
+    -webkit-animation: thumbnail-pop 0.5s ease forwards 1.6s;
+    animation: thumbnail-pop 0.5s ease forwards 2.4s;
+}
+.thumbnail:nth-child(6){
+    -webkit-animation: thumbnail-pop 0.5s ease forwards 1.6s;
+    animation: thumbnail-pop 0.5s ease forwards 2.6s;
+}
+.thumbnail:nth-child(7){
+    -webkit-animation: thumbnail-pop 0.5s ease forwards 1.6s;
+    animation: thumbnail-pop 0.5s ease forwards 2.8s;
+}
+.thumbnail:nth-child(8){
+    -webkit-animation: thumbnail-pop 0.5s ease forwards 1.6s;
+    animation: thumbnail-pop 0.5s ease forwards 3s;
+}
+.thumbnail:nth-child(9){
+    -webkit-animation: thumbnail-pop 0.5s ease forwards 1.6s;
+    animation: thumbnail-pop 0.5s ease forwards 3.2s;
+}
+.thumbnail:nth-child(10){
+    -webkit-animation: thumbnail-pop 0.5s ease forwards 1.6s;
+    animation: thumbnail-pop 0.5s ease forwards 3.4s;
+}
+
+@keyframes thumbnail-pop {
+    from {
+        opacity: 0.3;
+        transform: scale(0.3,0.3) translate(0,100%);
+    }
+    to{
+        opacity: 1;
+        transform: scale(1,1) translate(0,0);
+    }
+}
+
+@media (max-width: 600px){
+    .thumbnails-nest{
+        flex-direction: column;
+    }
+
+    .thumbnail{
+        width: 80vw;
+    }
+}
