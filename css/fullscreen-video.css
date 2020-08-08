@@ -11,6 +11,8 @@
 .full-screen-video{
     z-index: -99;
     animation: appear 3s ease;
+    position: absolute;
+    bottom: 0;
 }
 
 .darkscreen{
@@ -75,7 +77,6 @@
 @media (min-width: 1280px){
     .full-screen-video{
         width: 100vw;
-        bottom:0;
     }
 }
 
