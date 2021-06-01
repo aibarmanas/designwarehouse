@@ -90,11 +90,20 @@ aside{
 
 @media(max-width:600px){
     .container{
-        flex-direction: column;
+        flex-direction:column-reverse;
     }
 
     main{
         width: 80px;
         flex-direction: column;
+    }
+
+    .design-thumbnail{
+        width: 70vw;
+        height: 30vh;
+    }
+
+    aside{
+        width: 80vw;
     }
 }
