@@ -89,7 +89,12 @@ aside{
 }
 
 @media(max-width:600px){
+    .container{
+        flex-direction: column;
+    }
+
     main{
+        width: 80px;
         flex-direction: column;
     }
 }
