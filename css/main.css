@@ -94,13 +94,15 @@ aside{
     }
 
     main{
-        width: 80px;
+        width: 95px;
         flex-direction: column;
+        margin: 0;
     }
 
     .design-thumbnail{
-        width: 70vw;
-        height: 30vh;
+        width: 95vw;
+        height: 35vh;
+        margin: 30px 0;
     }
 
     aside{
