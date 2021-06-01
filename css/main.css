@@ -87,3 +87,9 @@ aside{
     line-height: 1.7em;
     font-size: large;
 }
+
+@media(max-width:600px){
+    main{
+        flex-direction: column;
+    }
+}
